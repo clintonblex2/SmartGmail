@@ -196,7 +196,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MyViewHo
     }
 
     // As the views will be reused, sometimes the icon appears as
-    // flipped because older view is reused. Reset the Y-axis to 0
+    // flipped because older view is reused.
+    // Reset the Y-axis to 0
     private void resetIconYAxis(View view) {
         if (view.getRotationY() != 0) {
             view.setRotationY(0);
